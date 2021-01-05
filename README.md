@@ -1,3 +1,7 @@
+<p align="center">
+	<img src="./assets/ink_and_quill_banner.jpg" alt="Ink and quill banner">
+</p>
+
 <h1 align="center">📜 Ink and Quill - Text Editor 📜</h1>
 
 ## Project description
