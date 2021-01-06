@@ -53,6 +53,7 @@ a {
 	margin-top: 25px;
 	height: 325px;
 	text-decoration: italic;
+	overflow-y: scroll;
 }
 
 em,
