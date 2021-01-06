@@ -54,3 +54,8 @@ a {
 	height: 325px;
 	text-decoration: italic;
 }
+
+em,
+i {
+	font-style: italic;
+}
