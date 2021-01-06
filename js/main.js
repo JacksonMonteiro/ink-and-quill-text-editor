@@ -1,11 +1,15 @@
-const italic = document.getElementById('italic');
-const bold = document.getElementById('bold');
+const boldButton = document.getElementById('bold');
+const underlineButton = document.getElementById('underline');
 const editor = document.getElementById('editor');
 
 window.addEventListener('load', () => {
 	document.getElementById('editor').setAttribute('contenteditable', true);
 });
 
-bold.addEventListener('click', () => {
+boldButton.addEventListener('click', () => {
 	document.execCommand('bold');
 });
+
+underlineButton.addEventListener('click', () => {
+	document.execCommand('underline');
+})
