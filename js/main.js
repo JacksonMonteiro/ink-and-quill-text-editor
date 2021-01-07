@@ -1,13 +1,16 @@
-/* Constants and variables */
+// Elements
 const editor = document.getElementById('editor');
-
 const boldButton = document.getElementById('bold');
 const italicButton = document.getElementById('italic');
 const underlineButton = document.getElementById('underline');
 const subscriptButton = document.getElementById('subscript');
 const superscriptButton = document.getElementById('superscript');
 
-/* Set the contenteditable attribute of the div#editor to true*/
+// Boolean keys
+let isSubscript = false;
+let isSuperscript = false;
+
+// Set the contenteditable attribute of the div#editor to true
 window.addEventListener('load', () => {
 	document.getElementById('editor').setAttribute('contenteditable', true);
 });
@@ -30,10 +33,21 @@ underlineButton.addEventListener('click', () => {
 
 // Turn text into subscript
 subscriptButton.addEventListener('click', () => {
-	document.execCommand('subscript');
+	if (isSubscript === false) {
+		document.execCommand('subscript');
+		isSubscript = true;
+	} else {
+		document.execCommand('undo');
+		isSubscript = false;
+	}
 });
 
 // Turn text into superscript
 superscriptButton.addEventListener('click', () => {
-	document.execCommand('superscript');
+	if (isSuperscript === false) {
+		document.execCommand('superscript');
+	} else {
+		document.execCommand('undo');
+		isSuperscript = false;
+	}
 });
