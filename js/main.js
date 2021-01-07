@@ -10,6 +10,33 @@ const superscriptButton = document.getElementById('superscript');
 let isSubscript = false;
 let isSuperscript = false;
 
+// Download file
+function downloadFile(filename, text, element) {
+	element.setAttribute('href', `data:text/plain;charset=utf-8, ${encodeURIComponent(text)}`);
+	element.setAttribute('download', filename);
+}
+
+// Download in doc
+document.getElementById('doc').addEventListener('click', () => {
+	let element = document.getElementById('doc');
+	let text = editor.innerHTML;
+	downloadFile('myFile.doc', text, element);	
+});	
+
+// Download in odt 
+document.getElementById('odt').addEventListener('click', () => {
+	let element = document.getElementById('odt');
+	let text = editor.innerHTML;
+	downloadFile('myFile.odt', text, element);
+})
+
+// Download in PDF
+document.getElementById('pdf').addEventListener('click', () => {
+	let element = document.getElementById('pdf');
+	let text = editor.innerHTML;
+	downloadFile('myFile.pdf', text, element);
+})
+
 // Set the contenteditable attribute of the div#editor to true
 window.addEventListener('load', () => {
 	document.getElementById('editor').setAttribute('contenteditable', true);

@@ -15,13 +15,22 @@
 
 	<main class="container">
 		<nav class="d-flex border-bottom">
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Download</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<li><a id="doc" class="dropdown-item">Doc</a></li>
+					<li><a id="odt" class="dropdown-item">Odt</a></li>
+					<li><a id="pdf" class="dropdown-item">PDF</a></li>
+				</ul>
+			</div>
+
 			<div class="list-group list-group-horizontal">
-				<a href="javascript:void(0)" id="bold" class="list-group-item list-group-item-action fw-bold">B</a>
-				<a href="javascript:void(0)" id="italic" class="list-group-item list-group-item-action fst-italic">I</a>
-				<a href="javascript:void(0)" id="underline" class="list-group-item list-group-item-action text-decoration-underline	">U</a>
+				<a href="javascript:void(0)" id="bold" class="list-group-item list-group-item-action fw-bold border border-dark">B</a>
+				<a href="javascript:void(0)" id="italic" class="list-group-item list-group-item-action fst-italic border-start-0 border-dark">I</a>
+				<a href="javascript:void(0)" id="underline" class="list-group-item list-group-item-action text-decoration-underline	border-start-0 border-dark">U</a>
 				<a href="javascript:void(0)" id="subscript" class="
-				list-group-item list-group-item-action">X<sub>2</sub></a>
-				<a href="javascript:void(0)" id="superscript" class="list-group-item list-group-item-action">X<sup>2</sup></a>
+				list-group-item list-group-item-action border-start-0 border-dark">X<sub>2</sub></a>
+				<a href="javascript:void(0)" id="superscript" class="list-group-item list-group-item-action border-start-0 border-dark">X<sup>2</sup></a>
 			</div>
 		</nav>
 		<div class="container border border-secondary p-3" id="editor">
@@ -29,6 +38,10 @@
 		</div>
 	</main>
 
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+	<!-- Javascript main file -->
 	<script src="./js/main.js"></script>
 </body>
 </html>
