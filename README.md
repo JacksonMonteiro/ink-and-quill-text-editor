@@ -26,6 +26,7 @@
 <h2 id="features">Features</h2>
 
 <h6>Text formatting</h6>
+
 - [x] Bold
 - [x] Italic
 - [x] Underlined
@@ -33,7 +34,9 @@
 - [x] Superscript
 
 <h2 id="tech">Used technologies</h2>
+
 - [Bootstrap](https://getbootstrap.com/)
+
 
 <h2 id="author">Author</h2>
 
