@@ -33,6 +33,13 @@
 - [x] Sub-script
 - [x] Superscript
 
+<h6>Text align</h6>
+
+- [ ] Left
+- [ ] Center
+- [ ] Right
+- [ ] Justified
+
 <h2 id="tech">Used technologies</h2>
 
 - [Bootstrap](https://getbootstrap.com/)
