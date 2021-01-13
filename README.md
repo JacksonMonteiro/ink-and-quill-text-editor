@@ -26,14 +26,24 @@
 <h2 id="features">Features</h2>
 
 <h6>Text formatting</h6>
+
 - [x] Bold
 - [x] Italic
 - [x] Underlined
 - [x] Sub-script
 - [x] Superscript
 
+<h6>Text align</h6>
+
+- [ ] Left
+- [ ] Center
+- [ ] Right
+- [ ] Justified
+
 <h2 id="tech">Used technologies</h2>
+
 - [Bootstrap](https://getbootstrap.com/)
+
 
 <h2 id="author">Author</h2>
 
