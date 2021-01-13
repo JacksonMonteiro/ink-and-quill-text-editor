@@ -5,6 +5,10 @@ const italicButton = document.getElementById('italic');
 const underlineButton = document.getElementById('underline');
 const subscriptButton = document.getElementById('subscript');
 const superscriptButton = document.getElementById('superscript');
+const alignLeft = document.getElementById('left');
+const alignCenter = document.getElementById('center');
+const alignRight = document.getElementById('right');
+const justify = document.getElementById('justify');
 
 // Boolean keys
 let isSubscript = false;
@@ -78,3 +82,23 @@ superscriptButton.addEventListener('click', () => {
 		isSuperscript = false;
 	}
 });
+
+// Align left 
+alignLeft.addEventListener('click', () => {
+	document.execCommand('justifyLeft');
+})
+
+// Align Center
+alignCenter.addEventListener('click', () => {
+	document.execCommand('justifyCenter');
+})
+
+// Align right
+alignRight.addEventListener('click', () => {
+	document.execCommand('justifyRight');
+})
+
+// Justify
+justify.addEventListener('click', () => {
+	document.execCommand('justifyFull');
+})
