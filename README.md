@@ -35,10 +35,10 @@
 
 <h6>Text align</h6>
 
-- [ ] Left
-- [ ] Center
-- [ ] Right
-- [ ] Justified
+- [x] Left
+- [x] Center
+- [x] Right
+- [x] Justified
 
 <h2 id="tech">Used technologies</h2>
 
