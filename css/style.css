@@ -54,6 +54,7 @@ a {
 #editor {
 	margin-top: 25px;
 	height: 325px;
+	font-family: "Arial", Sans-serif;
 	text-decoration: italic;
 	overflow-y: scroll;
 }
@@ -71,9 +72,15 @@ i {
 .logo {
 	display: block;
 	width: 100%;
-	max-width: 300px;
+	max-width: 150px;
 }
 
 header h6 {
 	margin-top: -30px;
+}
+
+#font {
+	border-bottom: 1px solid #000;
+	margin-right: 15px;
+	outline: none;
 }

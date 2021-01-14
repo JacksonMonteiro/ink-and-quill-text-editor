@@ -9,6 +9,7 @@ const alignLeft = document.getElementById('left');
 const alignCenter = document.getElementById('center');
 const alignRight = document.getElementById('right');
 const justify = document.getElementById('justify');
+const fontFamily = document.getElementById('font');
 
 // Boolean keys
 let isSubscript = false;
@@ -101,4 +102,9 @@ alignRight.addEventListener('click', () => {
 // Justify
 justify.addEventListener('click', () => {
 	document.execCommand('justifyFull');
+})
+
+/*Select events*/
+font.addEventListener('change', () => {
+	editor.style.fontFamily = `${font.value}`;
 })
